@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public bool hasSpeedPotion = false;
     public int potionModAmount = 0;
 
+    public AudioClip jumpClip;
+
     private float potionTimeMax = 10f;
     private float potionTimeCur = 0f;
 
@@ -31,10 +33,15 @@ public class PlayerMovement : MonoBehaviour
             jumpFlag = false;
             animator.SetBool("IsJumping", true);
         }
+
         if (Input.GetButtonDown("Jump"))
         {
-            jump = true;
-            animator.SetBool("IsJumping", true);
+            if(animator.GetBool("IsJumping") == false)
+            {
+                AudioSource.PlayClipAtPoint(jumpClip, transform.position);
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
         }
     }
 

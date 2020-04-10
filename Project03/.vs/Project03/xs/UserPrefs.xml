@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{222C9108-B97D-5D75-89E9-F69358520302}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterController2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraFollow.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="60" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="41" Column="75" />
       <File FileName="Assets/Scripts/Potion_Controller.cs" Line="11" Column="1" />
       <File FileName="Assets/Scripts/CharacterController2D.cs" Line="133" Column="74" />
+      <File FileName="Assets/Scripts/FloatingMovement.cs" Line="13" Column="41" />
+      <File FileName="Assets/Scripts/GemstonePickup.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="26" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +14,7 @@
           <Node name="Project03" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CharacterController2D.cs" selected="True" />
+                <Node name="CameraFollow.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8497a9bf-b103-440d-8f63-ecf462f830ad" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f3420ff3-7777-4ada-bff3-a32d2fcfed68" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
