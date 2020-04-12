@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float runSpeed = 25f;
     public bool hasJumpPotion = false;
-    public bool hasSpeedPotion = false;
+    public bool hasShootPotion = false;
     public int potionModAmount = 0;
 
     public AudioClip jumpClip;
@@ -22,6 +22,13 @@ public class PlayerMovement : MonoBehaviour
     bool jumpFlag = false;
     bool jump = false;
 
+    public GameObject bullet;
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        GetComponent<Rigidbody2D>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -65,6 +72,18 @@ public class PlayerMovement : MonoBehaviour
             hasJumpPotion = false;
         }
 
+        if (hasShootPotion && potionTimeCur < potionTimeMax)
+        {
+            potionTimeCur += Time.fixedDeltaTime;
+            Shoot();
+        }
+        else
+        {
+            potionTimeCur = 0f;
+            hasShootPotion = false;
+        }
+
+
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
 
 
@@ -73,4 +92,13 @@ public class PlayerMovement : MonoBehaviour
             jumpFlag = true;
         }
     }
+
+    void Shoot()
+    { 
+        if (Input.GetKeyDown(KeyCode.UpArrow)){
+            GameObject.Instantiate(bullet, transform.position, transform.rotation);
+        }
+
+    }
+
 }

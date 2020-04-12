@@ -5,7 +5,7 @@ using UnityEngine;
 public class Potion_Controller : MonoBehaviour
 {
 
-    public enum PotionType{ Speed, Jump }
+    public enum PotionType{ Shoot, Jump }
     public PotionType potionType;
     public int potionModAmount = 0;
 
@@ -17,9 +17,9 @@ public class Potion_Controller : MonoBehaviour
             if(potionType == PotionType.Jump)
             {
                 collision.gameObject.GetComponent<PlayerMovement>().hasJumpPotion = true;
-            }else if(potionType == PotionType.Speed)
+            }else if(potionType == PotionType.Shoot)
             {
-                collision.gameObject.GetComponent<PlayerMovement>().hasSpeedPotion = true;
+                collision.gameObject.GetComponent<PlayerMovement>().hasShootPotion = true;
             }
 
             collision.gameObject.GetComponent<PlayerMovement>().potionModAmount = potionModAmount;

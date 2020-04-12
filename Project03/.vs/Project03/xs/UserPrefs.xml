@@ -1,12 +1,7 @@
 ﻿<Properties StartupConfiguration="{222C9108-B97D-5D75-89E9-F69358520302}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraFollow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/bullet_controller.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="41" Column="75" />
-      <File FileName="Assets/Scripts/Potion_Controller.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/CharacterController2D.cs" Line="133" Column="74" />
-      <File FileName="Assets/Scripts/FloatingMovement.cs" Line="13" Column="41" />
-      <File FileName="Assets/Scripts/GemstonePickup.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/CameraFollow.cs" Line="26" Column="69" />
+      <File FileName="Assets/Scripts/bullet_controller.cs" Line="22" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +9,7 @@
           <Node name="Project03" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CameraFollow.cs" selected="True" />
+                <Node name="bullet_controller.cs" selected="True" />
               </Node>
             </Node>
           </Node>
